@@ -1,0 +1,34 @@
+<Workspace Version="0.7.2.2114" X="-937" Y="192" zoom="1" Description="Gets the Suitable View data from Navis for looking at clashes" Category="DynaWorks14.Custom" Name="ClashSuitableViews" ID="23991022-920e-4845-bd48-9788d46236df">
+  <Elements>
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="c8a8a9f1-85d0-4160-b440-7290cfc59579" nickname="ClashDetection.GetClashTests" x="516.372572111771" y="149.623157097524" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="D:\bin\AnyCPU\Release\DynaWorks14.dll" function="DynaWorks14.ClashDetection.ClashDetection.GetClashTests@DynaWorks14.ClashDetection.ClashDetection" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="22b70035-bbf4-4117-b738-54d258bd3def" nickname="ClashDetection.GetClashDetection" x="217.652406984354" y="154.863861748882" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="D:\bin\AnyCPU\Release\DynaWorks14.dll" function="DynaWorks14.ClashDetection.ClashDetection.GetClashDetection@DynaWorks14.OpenNavisFile" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="4005004e-cd34-4c92-b3c1-9d16eaa29506" nickname="ClashDetection.GetAllClashResults" x="763.559141500833" y="172.332877253409" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="D:\bin\AnyCPU\Release\DynaWorks14.dll" function="DynaWorks14.ClashDetection.ClashDetection.GetAllClashResults@var" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="9af779b8-042c-4a21-9e02-17d6d2e79d0e" nickname="ClashDetection.GetSuitableEyePoint" x="1076" y="94" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="D:\bin\AnyCPU\Release\DynaWorks14.dll" function="DynaWorks14.ClashDetection.ClashDetection.GetSuitableEyePoint@var" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="c7f93fcb-aae5-45de-b939-20eb59d4fd4f" nickname="ClashDetection.GetSuitableDirectionPoint" x="1079" y="190" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="D:\bin\AnyCPU\Release\DynaWorks14.dll" function="DynaWorks14.ClashDetection.ClashDetection.GetSuitableDirectionPoint@var" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="4874bad6-5bce-4e32-9416-23c747fa6ef5" nickname="ClashDetection.GetClashBoundingBox" x="1092" y="279" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="D:\bin\AnyCPU\Release\DynaWorks14.dll" function="DynaWorks14.ClashDetection.ClashDetection.GetClashBoundingBox@var" />
+    <Dynamo.Nodes.Symbol type="Dynamo.Nodes.Symbol" guid="1e0e6b52-9d10-4fad-b98a-825f7cda37e6" nickname="Input" x="-91" y="155" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="OpenNavisFile" />
+    </Dynamo.Nodes.Symbol>
+    <Dynamo.Nodes.Output type="Dynamo.Nodes.Output" guid="10578d65-8d94-43a5-af0a-359b1d838652" nickname="Output" x="1451" y="99" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="Camera" />
+    </Dynamo.Nodes.Output>
+    <Dynamo.Nodes.Output type="Dynamo.Nodes.Output" guid="6019f8c8-b958-498a-a0c2-275af1a2d265" nickname="Output" x="1442" y="278" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="BoundingBox" />
+    </Dynamo.Nodes.Output>
+    <Dynamo.Nodes.Output type="Dynamo.Nodes.Output" guid="a9e22d29-5b93-4630-83fc-1d14c9f513eb" nickname="Output" x="1450" y="197" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="DirectionPoint" />
+    </Dynamo.Nodes.Output>
+  </Elements>
+  <Connectors>
+    <Dynamo.Models.ConnectorModel start="c8a8a9f1-85d0-4160-b440-7290cfc59579" start_index="0" end="4005004e-cd34-4c92-b3c1-9d16eaa29506" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="22b70035-bbf4-4117-b738-54d258bd3def" start_index="0" end="c8a8a9f1-85d0-4160-b440-7290cfc59579" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="4005004e-cd34-4c92-b3c1-9d16eaa29506" start_index="0" end="9af779b8-042c-4a21-9e02-17d6d2e79d0e" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="4005004e-cd34-4c92-b3c1-9d16eaa29506" start_index="0" end="c7f93fcb-aae5-45de-b939-20eb59d4fd4f" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="4005004e-cd34-4c92-b3c1-9d16eaa29506" start_index="0" end="4874bad6-5bce-4e32-9416-23c747fa6ef5" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="9af779b8-042c-4a21-9e02-17d6d2e79d0e" start_index="0" end="10578d65-8d94-43a5-af0a-359b1d838652" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="c7f93fcb-aae5-45de-b939-20eb59d4fd4f" start_index="0" end="a9e22d29-5b93-4630-83fc-1d14c9f513eb" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="4874bad6-5bce-4e32-9416-23c747fa6ef5" start_index="0" end="6019f8c8-b958-498a-a0c2-275af1a2d265" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="1e0e6b52-9d10-4fad-b98a-825f7cda37e6" start_index="0" end="22b70035-bbf4-4117-b738-54d258bd3def" end_index="0" portType="0" />
+  </Connectors>
+  <Notes />
+</Workspace>

@@ -1,0 +1,44 @@
+<Workspace Version="0.7.2.2114" X="-2257.6317484144" Y="78.9041778223755" zoom="1.01204214144457" Description="Gets all the nodes in Revit Projects" Category="DynaWorks14.Custom" Name="GetAllNodes" ID="2cecdbd3-cba9-4f4f-be59-d565dd6790d5">
+  <Elements>
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="aacd8689-da77-4203-9f19-6203f5d73877" nickname="NavisNodes.GetFilesInProject" x="151.72336340994" y="81.5609761636993" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="D:\bin\AnyCPU\Release\DynaWorks14.dll" function="DynaWorks14.Objects.NavisNodes.GetFilesInProject@DynaWorks14.OpenNavisFile" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="65d9deb6-2858-4fdc-af64-768c5baec51b" nickname="NavisNodes.GetNodeChildren" x="436.894963662729" y="71.4125206386891" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="D:\bin\AnyCPU\Release\DynaWorks14.dll" function="DynaWorks14.Objects.NavisNodes.GetNodeChildren@var" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="d613883f-fa02-417b-9ac1-0f148d8a46eb" nickname="NavisNodes.GetNodeChildren" x="751.334199184242" y="129.58448863886" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="D:\bin\AnyCPU\Release\DynaWorks14.dll" function="DynaWorks14.Objects.NavisNodes.GetNodeChildren@var" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="55a85c06-e1c4-48cd-9c4c-d0930e595216" nickname="NavisNodes.GetNodeChildren" x="1035.65383963834" y="174.926766993794" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="D:\bin\AnyCPU\Release\DynaWorks14.dll" function="DynaWorks14.Objects.NavisNodes.GetNodeChildren@var" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="ae51df78-071e-4401-ad5d-e0d16f7c2fea" nickname="NavisNodes.GetNodeChildren" x="1316.76605768112" y="245.965955668866" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="D:\bin\AnyCPU\Release\DynaWorks14.dll" function="DynaWorks14.Objects.NavisNodes.GetNodeChildren@var" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="a6fbdb2b-ff8f-458f-8ad9-049c8669d234" nickname="NavisNodes.GetNodeChildren" x="1604.98219459141" y="292.648851083913" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="D:\bin\AnyCPU\Release\DynaWorks14.dll" function="DynaWorks14.Objects.NavisNodes.GetNodeChildren@var" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="3f9e025b-65c2-4a07-ab10-34b543b94f5a" nickname="NavisNodes.GetNodeChildren" x="1891.17769493345" y="507.436992652853" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="D:\bin\AnyCPU\Release\DynaWorks14.dll" function="DynaWorks14.Objects.NavisNodes.GetNodeChildren@var" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="cb95b77f-7ddf-4667-97b1-fec52396600a" nickname="Flatten" x="1985.10633132133" y="288.27017441447" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="" function="Flatten@var[]..[]" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="bdffcebd-1826-4da3-8634-75b6de9eb41a" nickname="Flatten" x="2183.8015236803" y="403.874649968782" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="" function="Flatten@var[]..[]" />
+    <DSCoreNodesUI.CreateList type="DSCoreNodesUI.CreateList" guid="9a751823-ae96-4ed2-800f-71131c1078a9" nickname="List.Create" x="2241.6195716932" y="-1.85940957759303" isVisible="true" isUpstreamVisible="true" lacing="Disabled" inputcount="7" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="18462d20-321d-4bd2-85bb-346df8f8c724" nickname="NavisNodes.GetNodeChildren" x="2203.06893627269" y="600.161415753708" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="D:\bin\AnyCPU\Release\DynaWorks14.dll" function="DynaWorks14.Objects.NavisNodes.GetNodeChildren@var" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="d17cdedd-3c8e-4290-b878-79ba231ae0a8" nickname="Flatten" x="2457.15793983477" y="96.8002617776404" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="" function="Flatten@var[]..[]" />
+    <Dynamo.Nodes.Symbol type="Dynamo.Nodes.Symbol" guid="84f9bac8-d623-4afa-8f86-26b552d3645e" nickname="Input" x="-67.0507932331809" y="73.9419406544155" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="OpenNavisFile" />
+    </Dynamo.Nodes.Symbol>
+    <Dynamo.Nodes.Output type="Dynamo.Nodes.Output" guid="365a73b1-fd11-4675-bd8a-7cdd5ad3c7ef" nickname="Output" x="2705.84338549496" y="126.369844491473" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="Nodes" />
+    </Dynamo.Nodes.Output>
+  </Elements>
+  <Connectors>
+    <Dynamo.Models.ConnectorModel start="aacd8689-da77-4203-9f19-6203f5d73877" start_index="0" end="65d9deb6-2858-4fdc-af64-768c5baec51b" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="65d9deb6-2858-4fdc-af64-768c5baec51b" start_index="0" end="d613883f-fa02-417b-9ac1-0f148d8a46eb" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="65d9deb6-2858-4fdc-af64-768c5baec51b" start_index="0" end="9a751823-ae96-4ed2-800f-71131c1078a9" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="d613883f-fa02-417b-9ac1-0f148d8a46eb" start_index="0" end="55a85c06-e1c4-48cd-9c4c-d0930e595216" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="d613883f-fa02-417b-9ac1-0f148d8a46eb" start_index="0" end="9a751823-ae96-4ed2-800f-71131c1078a9" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="55a85c06-e1c4-48cd-9c4c-d0930e595216" start_index="0" end="ae51df78-071e-4401-ad5d-e0d16f7c2fea" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="55a85c06-e1c4-48cd-9c4c-d0930e595216" start_index="0" end="9a751823-ae96-4ed2-800f-71131c1078a9" end_index="2" portType="0" />
+    <Dynamo.Models.ConnectorModel start="ae51df78-071e-4401-ad5d-e0d16f7c2fea" start_index="0" end="a6fbdb2b-ff8f-458f-8ad9-049c8669d234" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="ae51df78-071e-4401-ad5d-e0d16f7c2fea" start_index="0" end="9a751823-ae96-4ed2-800f-71131c1078a9" end_index="3" portType="0" />
+    <Dynamo.Models.ConnectorModel start="a6fbdb2b-ff8f-458f-8ad9-049c8669d234" start_index="0" end="9a751823-ae96-4ed2-800f-71131c1078a9" end_index="4" portType="0" />
+    <Dynamo.Models.ConnectorModel start="a6fbdb2b-ff8f-458f-8ad9-049c8669d234" start_index="0" end="3f9e025b-65c2-4a07-ab10-34b543b94f5a" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="3f9e025b-65c2-4a07-ab10-34b543b94f5a" start_index="0" end="18462d20-321d-4bd2-85bb-346df8f8c724" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="3f9e025b-65c2-4a07-ab10-34b543b94f5a" start_index="0" end="cb95b77f-7ddf-4667-97b1-fec52396600a" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="cb95b77f-7ddf-4667-97b1-fec52396600a" start_index="0" end="9a751823-ae96-4ed2-800f-71131c1078a9" end_index="5" portType="0" />
+    <Dynamo.Models.ConnectorModel start="bdffcebd-1826-4da3-8634-75b6de9eb41a" start_index="0" end="9a751823-ae96-4ed2-800f-71131c1078a9" end_index="6" portType="0" />
+    <Dynamo.Models.ConnectorModel start="9a751823-ae96-4ed2-800f-71131c1078a9" start_index="0" end="d17cdedd-3c8e-4290-b878-79ba231ae0a8" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="18462d20-321d-4bd2-85bb-346df8f8c724" start_index="0" end="bdffcebd-1826-4da3-8634-75b6de9eb41a" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="d17cdedd-3c8e-4290-b878-79ba231ae0a8" start_index="0" end="365a73b1-fd11-4675-bd8a-7cdd5ad3c7ef" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="84f9bac8-d623-4afa-8f86-26b552d3645e" start_index="0" end="aacd8689-da77-4203-9f19-6203f5d73877" end_index="0" portType="0" />
+  </Connectors>
+  <Notes />
+</Workspace>

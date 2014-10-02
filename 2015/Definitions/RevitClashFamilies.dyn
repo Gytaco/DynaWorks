@@ -1,0 +1,39 @@
+<Workspace Version="0.7.2.2114" X="-891.763497280798" Y="-76.6295090514814" zoom="1.00832868928869" Description="" Category="" Name="Home">
+  <Elements>
+    <DSCore.File.Filename type="DSCore.File.Filename" guid="2742c34d-cee7-43d6-bdd7-f6d96a07cfcb" nickname="File Path" x="-383" y="224" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <System.String>C:\Users\Adam_Sheather\Desktop\Stripe\DynaWorks Testing\File.nwf</System.String>
+    </DSCore.File.Filename>
+    <DSCoreNodesUI.BoolSelector type="DSCoreNodesUI.BoolSelector" guid="f59d21ef-e2c7-40be-9818-ce5c86007792" nickname="Boolean" x="-189" y="377" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <System.Boolean>True</System.Boolean>
+    </DSCoreNodesUI.BoolSelector>
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="537d4b6f-731d-405a-8da1-dac4e139c523" nickname="OpenNavisFile.OpenFile" x="25.3416700289222" y="304.599267477844" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="D:\bin\AnyCPU\Release\DynaWorks15.dll" function="DynaWorks15.FileSettings.OpenNavisFile.OpenFile@string,bool" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="ebb0dece-e285-40d7-b310-dc04c0f6c206" nickname="ClashDetection.GetClashDetection" x="308.988444269921" y="373.57144447269" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="D:\bin\AnyCPU\Release\DynaWorks15.dll" function="DynaWorks15.ClashDetection.ClashDetection.GetClashDetection@DynaWorks15.FileSettings.OpenNavisFile" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="19a25ec7-c03f-413f-b65e-f60466b180a8" nickname="ClashDetection.GetClashTests" x="586.158056077561" y="358.935425367336" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="D:\bin\AnyCPU\Release\DynaWorks15.dll" function="DynaWorks15.ClashDetection.ClashDetection.GetClashTests@DynaWorks15.ClashDetection.ClashDetection" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="c97c117f-3963-4916-aac7-73e565c5b882" nickname="ClashDetection.GetAllClashResults" x="839.544136839001" y="308.624109692682" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="D:\bin\AnyCPU\Release\DynaWorks15.dll" function="DynaWorks15.ClashDetection.ClashDetection.GetAllClashResults@var" />
+    <DSCoreNodesUI.BoolSelector type="DSCoreNodesUI.BoolSelector" guid="cd67d8af-0d4f-4f92-b1f9-06113c6989c1" nickname="Boolean" x="1001.00052731965" y="414.728673234502" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <System.Boolean>True</System.Boolean>
+    </DSCoreNodesUI.BoolSelector>
+    <DSRevitNodesUI.FamilyTypes type="DSRevitNodesUI.FamilyTypes" guid="ff124b35-875c-4ca2-8b44-27687e52c27e" nickname="Family Types" x="1574.8198042045" y="189.849319705084" isVisible="true" isUpstreamVisible="true" lacing="Disabled" index="5" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="51b5b388-1cd4-4d83-9cb2-5e59fdf9ad9f" nickname="FamilyInstance.ByPoint" x="1956.67580998256" y="271.489130185865" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="RevitNodes.dll" function="Revit.Elements.FamilyInstance.ByPoint@Revit.Elements.FamilySymbol,Autodesk.DesignScript.Geometry.Point" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="8e60b6a7-ecc8-44ce-8b9a-fdf0e32ec07c" nickname="ClashDetection.mGetClashPoint" x="1342.74730326976" y="332.031254965866" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="D:\bin\AnyCPU\Release\DynaWorks15.dll" function="DynaWorks15.ClashDetection.ClashDetection.mGetClashPoint@var,bool" />
+  </Elements>
+  <Connectors>
+    <Dynamo.Models.ConnectorModel start="2742c34d-cee7-43d6-bdd7-f6d96a07cfcb" start_index="0" end="537d4b6f-731d-405a-8da1-dac4e139c523" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="f59d21ef-e2c7-40be-9818-ce5c86007792" start_index="0" end="537d4b6f-731d-405a-8da1-dac4e139c523" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="537d4b6f-731d-405a-8da1-dac4e139c523" start_index="0" end="ebb0dece-e285-40d7-b310-dc04c0f6c206" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="ebb0dece-e285-40d7-b310-dc04c0f6c206" start_index="0" end="19a25ec7-c03f-413f-b65e-f60466b180a8" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="19a25ec7-c03f-413f-b65e-f60466b180a8" start_index="0" end="c97c117f-3963-4916-aac7-73e565c5b882" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="c97c117f-3963-4916-aac7-73e565c5b882" start_index="0" end="8e60b6a7-ecc8-44ce-8b9a-fdf0e32ec07c" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="cd67d8af-0d4f-4f92-b1f9-06113c6989c1" start_index="0" end="8e60b6a7-ecc8-44ce-8b9a-fdf0e32ec07c" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="ff124b35-875c-4ca2-8b44-27687e52c27e" start_index="0" end="51b5b388-1cd4-4d83-9cb2-5e59fdf9ad9f" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="8e60b6a7-ecc8-44ce-8b9a-fdf0e32ec07c" start_index="0" end="51b5b388-1cd4-4d83-9cb2-5e59fdf9ad9f" end_index="1" portType="0" />
+  </Connectors>
+  <Notes>
+    <Dynamo.Models.NoteModel text="Get Navisworks File" x="155.001286782083" y="262.576657786335" />
+    <Dynamo.Models.NoteModel text="Gets all the Clash Tests in the Clash Detection" x="676.711191263173" y="461.540926265094" />
+    <Dynamo.Models.NoteModel text="Gets all the Results in the Clash Tests" x="886.504893628722" y="237.795714597663" />
+    <Dynamo.Models.NoteModel text="Gets the Clash Detection Object" x="431.270955966023" y="469.480100724998" />
+    <Dynamo.Models.NoteModel text="Gets the Clash Points as Dynamo Point Objects.&#xD;&#xA;In MM!!" x="1321.07224732524" y="278.476248372462" />
+    <Dynamo.Models.NoteModel text="Places the Clash Sphere at each Location" x="1958.78864229101" y="226.640786314389" />
+  </Notes>
+</Workspace>

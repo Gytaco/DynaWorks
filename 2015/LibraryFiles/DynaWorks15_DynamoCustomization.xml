@@ -1,0 +1,23 @@
+﻿<?xml version="1.0"?>
+<doc>
+  <assembly>
+    <name>RevitNavis</name>
+  </assembly>
+  <namespaces>
+    <namespace name="DynaWorks15">
+      <category>DynaWorks15</category>
+    </namespace>
+    <namespace name="DynaWorks15.FileSettings">
+      <category>DynaWorks15.FileSettings</category>
+    </namespace>
+    <namespace name="DynaWorks15.Objects">
+      <category>DynaWorks15.Objects</category>
+    </namespace>
+    <namespace name="DynaWorks15.ClashDetection">
+      <category>DynaWorks15.ClashDetection</category>
+    </namespace>
+    <namespace name="DynaWorks15.Views">
+      <category>DynaWorks15.Views</category>
+    </namespace>
+  </namespaces>
+</doc>

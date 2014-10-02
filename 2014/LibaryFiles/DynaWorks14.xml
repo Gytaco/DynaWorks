@@ -1,0 +1,669 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DynaWorks14</name>
+    </assembly>
+    <members>
+        <member name="T:DynaWorks14.ClashDetection.ClashDetection">
+            <summary>
+                Class to handle all the clash detection
+            </summary>
+        </member>
+        <member name="F:DynaWorks14.ClashDetection.ClashDetection._clash">
+            <summary>
+                Navisworks Clash Object
+            </summary>
+        </member>
+        <member name="M:DynaWorks14.ClashDetection.ClashDetection.#ctor(DynaWorks14.FileSettings.OpenNavisFile)">
+            <summary>
+                Constructor for Clash Detection Toolset
+            </summary>
+        </member>
+        <member name="M:DynaWorks14.ClashDetection.ClashDetection.GetClashDetection(DynaWorks14.FileSettings.OpenNavisFile)">
+            <summary>
+                Gets the Clash Detection tools from the Open NWF file.
+            </summary>
+            <param name="OpenNavisFile">Open Autodesk Navisworks NWF File.</param>
+            <returns name="ClashDetection">Clash Detection Tools</returns>
+            <search>Navisworks,Clash</search>
+        </member>
+        <member name="M:DynaWorks14.ClashDetection.ClashDetection.RemoveResolvedClashes(DynaWorks14.ClashDetection.ClashDetection)">
+            <summary>
+                Removes Resolved Clashes from the Clash Test
+            </summary>
+            <param name="ClashDetection">Clash Detection Tools</param>
+            <returns name="ClashDetection">Clash Detection Tools</returns>
+            <search>Navisworks,Clash,Remove</search>
+        </member>
+        <member name="M:DynaWorks14.ClashDetection.ClashDetection.ClearClashResults(DynaWorks14.ClashDetection.ClashDetection)">
+            <summary>
+                Clears all Clashes from the Clash Tests
+            </summary>
+            <param name="ClashDetection">Clash Detection Tools</param>
+            <returns name="ClashDetection">Clash Detection Tools</returns>
+            <search>Navisworks,Clash,Remove</search>
+        </member>
+        <member name="M:DynaWorks14.ClashDetection.ClashDetection.RunAllTests(DynaWorks14.ClashDetection.ClashDetection)">
+            <summary>
+                Run all saved Clash Detections
+            </summary>
+            <param name="ClashDetection">Clash Detection Tools</param>
+            <returns name="ClashDetection">Clash Detection Tools</returns>
+            <search>Navisworks,Clash,Remove</search>
+        </member>
+        <member name="M:DynaWorks14.ClashDetection.ClashDetection.GetClashTests(DynaWorks14.ClashDetection.ClashDetection)">
+            <summary>
+                Returns a list of all the Clash tests
+            </summary>
+            <param name="ClashDetection">Open Autodesk Navisworks NWF File.</param>
+            <returns name="Test">Clash Detection Tools</returns>
+            <search>Navisworks,Clash,Test,List</search>
+        </member>
+        <member name="M:DynaWorks14.ClashDetection.ClashDetection.GetAllClashResults(DynaWorks14.ClashDetection.Test)">
+            <summary>
+                Returns a list of all the Clash Results
+            </summary>
+            <param name="ClashTest">Navisworks Clash Test</param>
+            <returns name="Results">List of Results in Clash Test</returns>
+            <search>Navisworks,Clash,Results,List</search>
+        </member>
+        <member name="M:DynaWorks14.ClashDetection.ClashDetection.GetClashGroupResults(DynaWorks14.ClashDetection.Test)">
+            <summary>
+                Returns a list of all the Clash Groups per List
+            </summary>
+            <param name="ClashTest">Navisworks Clash Test</param>
+            <returns name="GroupResults">List of Results in Clash Test</returns>
+            <search>Navisworks,Clash,Results,List</search>
+        </member>
+        <member name="M:DynaWorks14.ClashDetection.ClashDetection.GetClashResultComments(DynaWorks14.ClashDetection.Results)">
+            <summary>
+                Returns a list of ClashResult Comments per List
+            </summary>
+            <param name="Result">Navisworks Clash Result</param>
+            <returns name="string">List of Comments in Clash Result</returns>
+            <search>Navisworks,Clash,Results,List</search>
+        </member>
+        <member name="M:DynaWorks14.ClashDetection.ClashDetection.GetSuitableEyePoint(DynaWorks14.ClashDetection.Results)">
+            <summary>
+                Returns a list Clash Result Suitable Camera View Points
+            </summary>
+            <param name="Result">Navisworks Clash Result</param>
+            <returns name="Point">List of Comments in Clash Result</returns>
+            <search>Navisworks,Clash,Results,Points</search>
+        </member>
+        <member name="M:DynaWorks14.ClashDetection.ClashDetection.GetSuitableDirectionPoint(DynaWorks14.ClashDetection.Results)">
+            <summary>
+                Returns a list Clash Result Suitable Direction View Points
+            </summary>
+            <param name="Result">Navisworks Clash Result</param>
+            <returns name="Point">List of Comments in Clash Result</returns>
+            <search>Navisworks,Clash,Results,Points</search>
+        </member>
+        <member name="M:DynaWorks14.ClashDetection.ClashDetection.GetClashPoint(DynaWorks14.ClashDetection.Results,System.Boolean)">
+            <summary>
+                Returns the Point of a Clash Result based on first or second object
+            </summary>
+            <param name="Result">Navisworks Clash Result</param>
+            <param name="FirstClashItem">Navisworks Clash Result</param>
+            <returns name="Point">Point of Clash</returns>
+            <search>Navisworks,Clash,Point</search>
+        </member>
+        <member name="M:DynaWorks14.ClashDetection.ClashDetection.GetClashBoundingBox(DynaWorks14.ClashDetection.Results)">
+            <summary>
+                Returns the Bounding Box of a Clash Result
+            </summary>
+            <param name="Result">Navisworks Clash Result</param>
+            <returns name="BoundingBox">Bounding Box of Clash</returns>
+            <search>Navisworks,Clash,BoundingBox</search>
+        </member>
+        <member name="M:DynaWorks14.ClashDetection.ClashDetection.GetClashNodes(DynaWorks14.ClashDetection.Results,System.Boolean)">
+            <summary>
+                Returns a List of Nodes of a Clash Results
+            </summary>
+            <param name="Result">Navisworks Clash Result</param>
+            <param name="FirstClashItem">Navisworks Clash Result</param>
+            <returns name="Node">List of Nodes in a Clash Result</returns>
+            <search>Navisworks,Clash,Node,List</search>
+        </member>
+        <member name="T:DynaWorks14.ClashDetection.TestList">
+            <summary>
+                Class for handling clash test lists
+            </summary>
+        </member>
+        <member name="F:DynaWorks14.ClashDetection.TestList._clashTest">
+            <summary>
+                Clash Test
+            </summary>
+        </member>
+        <member name="F:DynaWorks14.ClashDetection.TestList._clashList">
+            <summary>
+                List of Clash Tests
+            </summary>
+        </member>
+        <member name="T:DynaWorks14.ClashDetection.Test">
+            <summary>
+                Class wrapper for Native COM Clash Tests
+            </summary>
+        </member>
+        <member name="M:DynaWorks14.ClashDetection.Test.ToString">
+            <summary>
+                ToString
+            </summary>
+        </member>
+        <member name="P:DynaWorks14.ClashDetection.Test.inobjects">
+            <summary>
+                inobjects Property
+            </summary>
+        </member>
+        <member name="T:DynaWorks14.ClashDetection.ResultList">
+            <summary>
+                Class to handle all the clash results
+            </summary>
+        </member>
+        <member name="F:DynaWorks14.ClashDetection.ResultList._clashR">
+            <summary>
+                Results Object
+            </summary>
+        </member>
+        <member name="F:DynaWorks14.ClashDetection.ResultList._ilclash">
+            <summary>
+                List of Results Object
+            </summary>
+        </member>
+        <member name="T:DynaWorks14.ClashDetection.Results">
+            <summary>
+                Class wrapper for Native COM clash Result
+            </summary>
+        </member>
+        <member name="M:DynaWorks14.ClashDetection.Results.ToString">
+            <summary>
+                ToString
+            </summary>
+        </member>
+        <member name="P:DynaWorks14.ClashDetection.Results.inobjects">
+            <summary>
+                inobjects Property
+            </summary>
+        </member>
+        <member name="T:DynaWorks14.ClashDetection.GroupResultsList">
+            <summary>
+                Class wrapper for Native COM clash Group Result
+            </summary>
+        </member>
+        <member name="F:DynaWorks14.ClashDetection.GroupResultsList._clashGR">
+            <summary>
+                GroupResults Object
+            </summary>
+        </member>
+        <member name="F:DynaWorks14.ClashDetection.GroupResultsList._ililGClash">
+            <summary>
+                GroupResults List of List Object
+            </summary>
+        </member>
+        <member name="M:DynaWorks14.ClashDetection.GroupResultsList.ToString">
+            <summary>
+                ToString
+            </summary>
+        </member>
+        <member name="T:DynaWorks14.ClashDetection.GroupResults">
+            <summary>
+                Class wrapper for Native COM clash Result
+            </summary>
+        </member>
+        <member name="M:DynaWorks14.ClashDetection.GroupResults.ToString">
+            <summary>
+                ToString output
+            </summary>
+        </member>
+        <member name="P:DynaWorks14.ClashDetection.GroupResults.inobjects">
+            <summary>
+                inobjects property
+            </summary>
+        </member>
+        <member name="T:DynaWorks14.ClashDetection.ClashNodesList">
+            <summary>
+                Class wrapper for Native COM Clash Results
+            </summary>
+        </member>
+        <member name="F:DynaWorks14.ClashDetection.ClashNodesList._ilNodes">
+            <summary>
+                List of Nodes
+            </summary>
+        </member>
+        <member name="F:DynaWorks14.ClashDetection.ClashNodesList._path">
+            <summary>
+                Collection of Paths
+            </summary>
+        </member>
+        <member name="T:DynaWorks14.Objects.Node">
+            <summary>
+                Wrapper for handling Navis Nodes
+            </summary>
+        </member>
+        <member name="M:DynaWorks14.Objects.Node.ToString">
+            <summary>
+                ToString
+            </summary>
+        </member>
+        <member name="P:DynaWorks14.Objects.Node.inobjects">
+            <summary>
+                inobjects Property
+            </summary>
+        </member>
+        <member name="T:DynaWorks14.Objects.NodeList">
+            <summary>
+                Wrapper for Navisworks Nodes in Clash Detection.cs
+            </summary>
+        </member>
+        <member name="F:DynaWorks14.Objects.NodeList._ilNode">
+            <summary>
+                List of Nodes
+            </summary>
+        </member>
+        <member name="T:DynaWorks14.Objects.NavisAttributeList">
+            <summary>
+                Gets the list of Attributes in a Node
+            </summary>
+        </member>
+        <member name="F:DynaWorks14.Objects.NavisAttributeList._nAtt">
+            <summary>
+                NavisAttribute
+            </summary>
+        </member>
+        <member name="F:DynaWorks14.Objects.NavisAttributeList._ilNAtt">
+            <summary>
+                List of NavisAttribute
+            </summary>
+        </member>
+        <member name="T:DynaWorks14.Objects.NavisAtt">
+            <summary>
+                Gets the list of Attributes in a Node
+            </summary>
+        </member>
+        <member name="F:DynaWorks14.Objects.NavisAtt._nAtt">
+            <summary>
+                Native Navis Attribute
+            </summary>
+        </member>
+        <member name="M:DynaWorks14.Objects.NavisAtt.ToString">
+            <summary>
+                ToString
+            </summary>
+        </member>
+        <member name="P:DynaWorks14.Objects.NavisAtt.inobjects">
+            <summary>
+                inobjects Property
+            </summary>
+        </member>
+        <member name="T:DynaWorks14.Objects.NavisProperty">
+            <summary>
+                Gets the list of Attributes in a Node
+            </summary>
+        </member>
+        <member name="M:DynaWorks14.Objects.NavisProperty.ToString">
+            <summary>
+                ToString
+            </summary>
+        </member>
+        <member name="P:DynaWorks14.Objects.NavisProperty.inobjects">
+            <summary>
+                inobjects Property
+            </summary>
+        </member>
+        <member name="T:DynaWorks14.Objects.SelectSet">
+            <summary>
+                SelectionSet Object
+            </summary>
+        </member>
+        <member name="M:DynaWorks14.Objects.SelectSet.ToString">
+            <summary>
+                ToString
+            </summary>
+        </member>
+        <member name="P:DynaWorks14.Objects.SelectSet.inobjects">
+            <summary>
+                inobjects Property
+            </summary>
+        </member>
+        <member name="T:DynaWorks14.Objects.NavisNodes">
+            <summary>
+                Gets the list of Attributes in a Node
+            </summary>
+        </member>
+        <member name="M:DynaWorks14.Objects.NavisNodes.NodeByClassNameList(System.Collections.Generic.IList{DynaWorks14.Objects.Node},System.String)">
+            <summary>
+                Gets a List of Navisworks Nodes by ClassName
+            </summary>
+            <param name="NodeList">Navisworks List of Nodes</param>
+            <param name="ClassName">String Name of User Class</param>
+            <returns name="GetNavisAttributesList">Navisworks Object</returns>
+            <search>Navisworks,Node</search>
+        </member>
+        <member name="M:DynaWorks14.Objects.NavisNodes.NodeByClassUserNameList(System.Collections.Generic.IList{DynaWorks14.Objects.Node},System.String)">
+            <summary>
+                Gets a List of Navisworks Nodes by ClassUserName
+            </summary>
+            <param name="NodeList">Navisworks List of Nodes</param>
+            <param name="ClassUserName">String Name of User Class</param>
+            <returns name="GetNavisAttributesList">Navisworks Object</returns>
+            <search>Navisworks,Node</search>
+        </member>
+        <member name="M:DynaWorks14.Objects.NavisNodes.GetFilesInProject(DynaWorks14.FileSettings.OpenNavisFile)">
+            <summary>
+                Gets a List of all nwc files in the loaded Project as Nodes
+            </summary>
+            <param name="OpenNavisFile">open Navisworks Project</param>
+            <returns name="Node">Nodes</returns>
+            <search>Navisworks,Node</search>
+        </member>
+        <member name="M:DynaWorks14.Objects.NavisNodes.GetNodeChildren(DynaWorks14.Objects.Node)">
+            <summary>
+                Gets a List of all the children nodes of a Node if the Nodes is a group
+            </summary>
+            <param name="Node">Navisworks Node</param>
+            <returns name="list">Nodes</returns>
+            <search>Navisworks,Node</search>
+        </member>
+        <member name="T:DynaWorks14.Objects.NavisAttributes">
+            <summary>
+                Gets the list of Attributes in a Node
+            </summary>
+        </member>
+        <member name="M:DynaWorks14.Objects.NavisAttributes.GetNavisAttributesFromNodesList(DynaWorks14.Objects.Node)">
+            <summary>
+                Gets a List of Navisworks Attributes from Nodes
+            </summary>
+            <param name="Node">Navisworks Clash Result</param>
+            <returns name="GetNavisAttributesList">Navisworks Object</returns>
+            <search>Navisworks,Node</search>
+        </member>
+        <member name="M:DynaWorks14.Objects.NavisAttributes.GetNavisAttByClassName(System.Collections.Generic.IList{DynaWorks14.Objects.NavisAtt},System.String)">
+            <summary>
+                Gets a Naviswork Attribute by Class Name
+            </summary>
+            <param name="NavisAttributesList">Navisworks Attributes</param>
+            <param name="ClassName">Class Name</param>
+            <returns name="NavisAtt">Node Attributes</returns>
+            <search>Navisworks,attribute</search>
+        </member>
+        <member name="M:DynaWorks14.Objects.NavisAttributes.GetNavisAttByClassUserName(System.Collections.Generic.IList{DynaWorks14.Objects.NavisAtt},System.String)">
+            <summary>
+                Gets a Naviswork Attribute by Class User Name
+            </summary>
+            <param name="NavisAttributesList">Nodet</param>
+            <param name="ClassUserName">Class User Name</param>
+            <returns name="NavisAtt">Node Attributes</returns>
+            <search>Navisworks,Node</search>
+        </member>
+        <member name="T:DynaWorks14.Objects.NavisSelection">
+            <summary>
+                Gets the list of Attributes in a Node
+            </summary>
+        </member>
+        <member name="M:DynaWorks14.Objects.NavisSelection.GetSelectionSetsInProject(DynaWorks14.FileSettings.OpenNavisFile)">
+            <summary>
+                Gets list of selection sets in project
+            </summary>
+            <param name="OpenNavisFile">open Navisworks Project</param>
+            <returns name="list">SelectionSets</returns>
+            <search>Navisworks,SelectionSets</search>
+        </member>
+        <member name="M:DynaWorks14.Objects.NavisSelection.GetNodesFromSelectionSets(System.Collections.Generic.IList{DynaWorks14.Objects.SelectSet})">
+            <summary>
+                Selects all Nodes in SelectionSets list
+            </summary>
+            <param name="Selectsets">List of Selection Sets</param>
+            <returns name="list">Nodes</returns>
+            <search>Navisworks,Nodes</search>
+        </member>
+        <member name="T:DynaWorks14.Objects.NavisPropertyList">
+            <summary>
+                Gets the list of Attributes in a Node
+            </summary>
+        </member>
+        <member name="F:DynaWorks14.Objects.NavisPropertyList._ilnprops">
+            <summary>
+                List of NavisProperty Objects
+            </summary>
+        </member>
+        <member name="M:DynaWorks14.Objects.NavisPropertyList.GetPropertiesList(DynaWorks14.FileSettings.OpenNavisFile,DynaWorks14.Objects.NavisAtt)">
+            <summary>
+                Gets a list of Navisworks property names from Attributes
+            </summary>
+            <param name="OpenNavisFile">Nodet</param>
+            <param name="NavisAttribute">Class User Name</param>
+            <returns name="NavisProperty">Node Attributes</returns>
+            <search>Navisworks,property,attribute</search>
+        </member>
+        <member name="M:DynaWorks14.Objects.NavisPropertyList.GetValuesAsStringClassUserName(DynaWorks14.FileSettings.OpenNavisFile,System.Collections.Generic.IList{DynaWorks14.Objects.NavisAtt},System.String,System.String)">
+            <summary>
+                Returns a List of Property Values from Navisworks Attributes Class User Name and Property Name
+            </summary>
+            <param name="OpenNavisFile">Nodet</param>
+            <param name="NavisAttributesList">Class User Name</param>
+            <param name="ClassUserName">Class User Name</param>
+            <param name="PropertyName">Class User Name</param>
+            <returns name="string">Node Attributes</returns>
+            <search>Navisworks,property,attribute</search>
+        </member>
+        <member name="M:DynaWorks14.Objects.NavisPropertyList.GetValuesAsStringClassName(DynaWorks14.FileSettings.OpenNavisFile,System.Collections.Generic.IList{DynaWorks14.Objects.NavisAtt},System.String,System.String)">
+            <summary>
+                Returns a List of Property Values from Navisworks Attributes ClassName and Property Name
+            </summary>
+            <param name="OpenNavisFile">Nodet</param>
+            <param name="NavisAttributesList">Class User Name</param>
+            <param name="ClassName">Class User Name</param>
+            <param name="PropertyName">Class User Name</param>
+            <returns name="string">Node Attributes</returns>
+            <search>Navisworks,property,attribute</search>
+        </member>
+        <member name="T:DynaWorks14.Objects.NavisUserPropertiesList">
+            <summary>
+                Class to get Properties by ClassUserName
+            </summary>
+        </member>
+        <member name="F:DynaWorks14.Objects.NavisUserPropertiesList._ilvalues">
+            <summary>
+                List of String values
+            </summary>
+        </member>
+        <member name="T:DynaWorks14.Objects.NavisPropertiesList">
+            <summary>
+                Class to get Properties by ClassName
+            </summary>
+        </member>
+        <member name="F:DynaWorks14.Objects.NavisPropertiesList._ilvalues">
+            <summary>
+                List of Property Values as string
+            </summary>
+        </member>
+        <member name="T:DynaWorks14.Objects.GetData">
+            <summary>
+                Gets the list of Attributes in a Node
+            </summary>
+        </member>
+        <member name="M:DynaWorks14.Objects.GetData.GetObjectNames(System.Object)">
+            <summary>
+                Gets a Navisworks Object Names as a list
+            </summary>
+            <param name="NavisObject">Navis Objects</param>
+            <returns name="string">List of Names in the Object</returns>
+            <search>Navisworks,object,properties</search>
+        </member>
+        <member name="M:DynaWorks14.Objects.GetData.GetObjectValues(System.Object,System.String)">
+            <summary>
+                Gets a Navisworks Object values as a list
+            </summary>
+            <param name="NavisObject">Navis Objects</param>
+            <param name="ObjectName">Navisworks object Name</param>
+            <returns name="string">List of values by property name</returns>
+            <search>Navisworks,object,properties, values</search>
+        </member>
+        <member name="T:DynaWorks14.FileSettings.OpenNavisFile">
+            <summary>
+                Opened Navisworks File Object
+            </summary>
+        </member>
+        <member name="F:DynaWorks14.FileSettings.OpenNavisFile._doc">
+            <summary>
+                Opened Navisworks Document
+            </summary>
+        </member>
+        <member name="F:DynaWorks14.FileSettings.OpenNavisFile._state">
+            <summary>
+                Opened Navisworks File State
+            </summary>
+        </member>
+        <member name="M:DynaWorks14.FileSettings.OpenNavisFile.#ctor(NavisworksAutomationAPI11.Document,System.String,System.Boolean)">
+            <summary>
+                Constructor for the OpenNavisworks File.
+            </summary>
+        </member>
+        <member name="M:DynaWorks14.FileSettings.OpenNavisFile.OpenFile(System.String,System.Boolean)">
+            <summary>
+                Opens a Navisworks File from within Revit, can be open for UserInteraction or in the background to save on memory and GUI.
+            </summary>
+            <param name="FilePath">File path to the Autodesk Navisworks NWF File.</param>
+            <param name="Visible">If Navisworks UI is opened</param>
+            <returns name="OpenNavisFile">Opened Navisworks File</returns>
+            <search>Navisworks,File</search>
+        </member>
+        <member name="M:DynaWorks14.FileSettings.OpenNavisFile.AppendFile(DynaWorks14.FileSettings.OpenNavisFile,System.String)">
+            <summary>
+                Appends a file to the Navisworks open project
+            </summary>
+            <param name="OpenNavisFile">Opened Navisworks File</param>
+            <param name="FilePath">File path to a appendable Navisworks File</param>
+            <returns name="OpenNavisFile">Opened Navisworks File</returns>
+            <search>Navisworks,File</search>
+        </member>
+        <member name="M:DynaWorks14.FileSettings.OpenNavisFile.SaveAs(DynaWorks14.FileSettings.OpenNavisFile,System.String)">
+            <summary>
+                SaveAs current opened Navisworks project
+            </summary>
+            <param name="OpenNavisFile">Opened Navisworks File</param>
+            <param name="FilePath">File path to new saved Navisworks File</param>
+            <returns name="OpenNavisFile">Opened Navisworks File</returns>
+            <search>Navisworks,File</search>
+        </member>
+        <member name="T:DynaWorks14.Views.SavedViewsList">
+            <summary>
+                Gets a list of saved views from the project
+            </summary>
+        </member>
+        <member name="F:DynaWorks14.Views.SavedViewsList._sview">
+            <summary>
+                Native saved View
+            </summary>
+        </member>
+        <member name="F:DynaWorks14.Views.SavedViewsList._nView">
+            <summary>
+                NavisView Object
+            </summary>
+        </member>
+        <member name="F:DynaWorks14.Views.SavedViewsList._ilviews">
+            <summary>
+                List of NavisView Objects
+            </summary>
+        </member>
+        <member name="T:DynaWorks14.Views.NavisView">
+            <summary>
+                Gets a list of saved views from the project
+            </summary>
+        </member>
+        <member name="M:DynaWorks14.Views.NavisView.ToString">
+            <summary>
+                ToString
+            </summary>
+        </member>
+        <member name="P:DynaWorks14.Views.NavisView.inobjects">
+            <summary>
+                inobjects Property
+            </summary>
+        </member>
+        <member name="T:DynaWorks14.Views.ViewPointList">
+            <summary>
+                Gets a list of saved views from the project
+            </summary>
+        </member>
+        <member name="F:DynaWorks14.Views.ViewPointList._viewp">
+            <summary>
+                ViewPoint Object
+            </summary>
+        </member>
+        <member name="F:DynaWorks14.Views.ViewPointList._viewpList">
+            <summary>
+                List of ViewPoint Objects
+            </summary>
+        </member>
+        <member name="T:DynaWorks14.Views.ViewPoint">
+            <summary>
+                Gets a list of saved views from the project
+            </summary>
+        </member>
+        <member name="M:DynaWorks14.Views.ViewPoint.ToString">
+            <summary>
+                ToString
+            </summary>
+        </member>
+        <member name="P:DynaWorks14.Views.ViewPoint.inobjects">
+            <summary>
+                inobjects Property
+            </summary>
+        </member>
+        <member name="T:DynaWorks14.Views.NavisViews">
+            <summary>
+                Gets a list of saved views from the project
+            </summary>
+        </member>
+        <member name="M:DynaWorks14.Views.NavisViews.GetSavedViews(DynaWorks14.FileSettings.OpenNavisFile)">
+            <summary>
+                Gets a list of saved views from the project
+            </summary>
+            <param name="OpenNavisFile">Open Navisworks File</param>
+            <returns name="GetSavedViews">Navisworks Views List</returns>
+            <search>Navisworks,Views,List</search>
+        </member>
+        <member name="M:DynaWorks14.Views.NavisViews.GetSavedViewCommentsByName(DynaWorks14.FileSettings.OpenNavisFile,System.String)">
+            <summary>
+                Gets a list of comments from saved views from the project
+            </summary>
+            <param name="OpenNavisFile">Open Navisworks File</param>
+            <param name="ViewName">View Name</param>
+            <returns name="string">Navisworks Comments List</returns>
+            <search>Navisworks,Views,Comments</search>
+        </member>
+        <member name="M:DynaWorks14.Views.NavisViews.GetView(DynaWorks14.Views.NavisView)">
+            <summary>
+                Gets a ViewPoint from Navisworks View
+            </summary>
+            <param name="NavisView">Navisworks View</param>
+            <returns name="ViewPoint">Navisworks View Point</returns>
+            <search>Navisworks,Views</search>
+        </member>
+        <member name="M:DynaWorks14.Views.NavisViews.GetCameraPoint(DynaWorks14.Views.NavisView)">
+            <summary>
+                Gets the Camera point as a Geometry Point
+            </summary>
+            <param name="NavisView">NavisView</param>
+            <returns name="Point">Geometry Point</returns>
+            <search>Navisworks,Views,Point</search>
+        </member>
+        <member name="M:DynaWorks14.Views.NavisViews.GetDirectionPoint(DynaWorks14.Views.NavisView)">
+            <summary>
+                Gets the Camera Direction point as a Geometry Point
+            </summary>
+            <param name="NavisView">NavisView</param>
+            <returns name="Point">Geometry Point</returns>
+            <search>Navisworks,Views,Point</search>
+        </member>
+        <member name="M:DynaWorks14.Views.NavisViews.GetViewDirection(DynaWorks14.Views.NavisView)">
+            <summary>
+                Gets the View Direction as a Geometry Vector
+            </summary>
+            <param name="NavisView">Navisworks View</param>
+            <returns name="Vector">Geometry Vector</returns>
+            <search>Navisworks,Views,Vector</search>
+        </member>
+    </members>
+</doc>

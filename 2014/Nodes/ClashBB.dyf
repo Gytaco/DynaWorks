@@ -1,0 +1,22 @@
+<Workspace Version="0.7.2.2114" X="83.0968777444692" Y="125.309360142208" zoom="0.651195020766213" Description="Get XYZ of clashes" Category="DynaWorks14.Custom" Name="ClashBB" ID="a7b03f26-ab0d-415a-b45d-27a1908cd8eb">
+  <Elements>
+    <Dynamo.Nodes.Symbol type="Dynamo.Nodes.Symbol" guid="f7efa3ba-6bc3-460e-8b71-e85e4ee08d73" nickname="Input" x="-34.5386852753967" y="190.590719010336" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="OpenNavisFile" />
+    </Dynamo.Nodes.Symbol>
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="f1ed493b-13c1-4376-b52c-de599b57fb96" nickname="ClashDetection.GetClashDetection" x="317.652406984354" y="154.863861748882" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="D:\bin\AnyCPU\Release\DynaWorks14.dll" function="DynaWorks14.ClashDetection.ClashDetection.GetClashDetection@DynaWorks14.OpenNavisFile" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="1681c22f-5bf9-4886-9823-3b29921741af" nickname="ClashDetection.GetClashTests" x="616.372572111771" y="149.623157097524" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="D:\bin\AnyCPU\Release\DynaWorks14.dll" function="DynaWorks14.ClashDetection.ClashDetection.GetClashTests@DynaWorks14.ClashDetection.ClashDetection" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="a9c3e8ed-cb96-47d7-b241-5f39022e6346" nickname="ClashDetection.GetAllClashResults" x="863.559141500833" y="172.332877253409" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="D:\bin\AnyCPU\Release\DynaWorks14.dll" function="DynaWorks14.ClashDetection.ClashDetection.GetAllClashResults@var" />
+    <Dynamo.Nodes.Output type="Dynamo.Nodes.Output" guid="2b266e21-e8ce-464d-96d7-f394e066595f" nickname="Output" x="1550.7079998645" y="213.706420633098" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="BB" />
+    </Dynamo.Nodes.Output>
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="0c0e93f1-fe9b-4005-86e3-1308e5924be0" nickname="ClashDetection.GetClashBoundingBox" x="1193.72037031646" y="189.806176537201" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="D:\bin\AnyCPU\Release\DynaWorks14.dll" function="DynaWorks14.ClashDetection.ClashDetection.GetClashBoundingBox@var" />
+  </Elements>
+  <Connectors>
+    <Dynamo.Models.ConnectorModel start="f7efa3ba-6bc3-460e-8b71-e85e4ee08d73" start_index="0" end="f1ed493b-13c1-4376-b52c-de599b57fb96" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="f1ed493b-13c1-4376-b52c-de599b57fb96" start_index="0" end="1681c22f-5bf9-4886-9823-3b29921741af" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="1681c22f-5bf9-4886-9823-3b29921741af" start_index="0" end="a9c3e8ed-cb96-47d7-b241-5f39022e6346" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="a9c3e8ed-cb96-47d7-b241-5f39022e6346" start_index="0" end="0c0e93f1-fe9b-4005-86e3-1308e5924be0" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="0c0e93f1-fe9b-4005-86e3-1308e5924be0" start_index="0" end="2b266e21-e8ce-464d-96d7-f394e066595f" end_index="0" portType="0" />
+  </Connectors>
+  <Notes />
+</Workspace>
