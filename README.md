@@ -3,7 +3,7 @@ DynaWorks
 
 This library contains the library files for using Navisworks and Dynamo
 
-<b>Installing the Library</b><br>
+<h1>Installing the Library<h1><br>
 Once you have downloaded the relevant library from here. Once the package manager is fixed you will be able to download the library as a package but until then you need to use Github.
 
 Once you downloaded the files as a zip or individually you need to copy paste the following files (Depending on whether you have 2015 or 2015 Navisworks) to a folder location. It doesn't matter where as long as the following files are available.
