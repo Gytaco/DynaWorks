@@ -1,7 +1,7 @@
 DynaWorks
 ===========
 
-This library contains the library files for using Navisworks and Dynamo. To understand the basics of what they do please view this [video.] (http://www.youtube.com/watch?v=EM9k78ZDRRU&feature=youtu.be) Or you can have a look at this [blog post](http://stuffandbims.blogspot.com/2014/10/dynaworks-is-here-navisworks-library.html) for further background and explanation
+This library contains the binary files for using Navisworks in Dynamo. To understand the basics of what they do please view this [video.] (http://www.youtube.com/watch?v=EM9k78ZDRRU&feature=youtu.be) Or you can have a look at this [blog post](http://stuffandbims.blogspot.com/2014/10/dynaworks-is-here-navisworks-library.html) for further background and explanation
 
 You will need Dynamo and Navisworks Simulate or Manage to Use this library. 
 
