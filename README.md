@@ -58,7 +58,7 @@ Second in Objects>NavisNodes>GetFilesInProject this will give you the starting p
 
 Last you can use any existing selection sets in Objects>NavisSelection and get a list of selectionsets manipulate and create what you need then use the GetNodesFromSelectionSets.
 
-<h2>ClassNames vs ClassUserNames</h2>
+<h3>ClassNames vs ClassUserNames</h3>
 There are two options here, both are equally valuable, one allows you to select objects by the Navisworks objectname, the second allows you to select objects by the string name data from Revit or other external package.
 To know which name you need to select expand the little data readout, the first name of any node is the ClassName and the second is the UserClassName. The same thing goes for attributes.
 
