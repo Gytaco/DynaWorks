@@ -1,0 +1,22 @@
+<Workspace Version="0.7.2.2114" X="-75.6511786972431" Y="109.47308818493" zoom="0.658674852158215" Description="Gets the BoundingBox of clashes in metres" Category="DynaWorks15.Custom" Name="ClashingBoundingBox" ID="7f289947-1ef3-44be-8939-71a994ed2ff0">
+  <Elements>
+    <Dynamo.Nodes.Symbol type="Dynamo.Nodes.Symbol" guid="2a84abf0-cfd8-47d5-b2a6-1f49efae1fde" nickname="Input" x="271" y="240" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="OpenNavisFile" />
+    </Dynamo.Nodes.Symbol>
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="6367b51c-aa99-46e6-b008-b150c07d2364" nickname="ClashDetection.GetClashDetection" x="459" y="230" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="D:\bin\AnyCPU\Release\DynaWorks15.dll" function="DynaWorks15.ClashDetection.ClashDetection.GetClashDetection@DynaWorks15.FileSettings.OpenNavisFile" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="7395d972-31c0-4fef-97ae-c94342091bbe" nickname="ClashDetection.GetClashTests" x="725" y="232" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="D:\bin\AnyCPU\Release\DynaWorks15.dll" function="DynaWorks15.ClashDetection.ClashDetection.GetClashTests@DynaWorks15.ClashDetection.ClashDetection" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="b03bc5e1-47bc-4464-a4fc-6a0b3c82f4d3" nickname="ClashDetection.GetAllClashResults" x="954" y="226" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="D:\bin\AnyCPU\Release\DynaWorks15.dll" function="DynaWorks15.ClashDetection.ClashDetection.GetAllClashResults@var" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="60b33459-e672-46d3-80f6-678293103009" nickname="ClashDetection.mGetClashBoundingBox" x="1235" y="227" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="D:\bin\AnyCPU\Release\DynaWorks15.dll" function="DynaWorks15.ClashDetection.ClashDetection.mGetClashBoundingBox@var" />
+    <Dynamo.Nodes.Output type="Dynamo.Nodes.Output" guid="3731b1af-ef6c-43ca-838a-e4cb2a40b2b2" nickname="Output" x="1536" y="238" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="BBList" />
+    </Dynamo.Nodes.Output>
+  </Elements>
+  <Connectors>
+    <Dynamo.Models.ConnectorModel start="2a84abf0-cfd8-47d5-b2a6-1f49efae1fde" start_index="0" end="6367b51c-aa99-46e6-b008-b150c07d2364" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="6367b51c-aa99-46e6-b008-b150c07d2364" start_index="0" end="7395d972-31c0-4fef-97ae-c94342091bbe" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="7395d972-31c0-4fef-97ae-c94342091bbe" start_index="0" end="b03bc5e1-47bc-4464-a4fc-6a0b3c82f4d3" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="b03bc5e1-47bc-4464-a4fc-6a0b3c82f4d3" start_index="0" end="60b33459-e672-46d3-80f6-678293103009" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="60b33459-e672-46d3-80f6-678293103009" start_index="0" end="3731b1af-ef6c-43ca-838a-e4cb2a40b2b2" end_index="0" portType="0" />
+  </Connectors>
+  <Notes />
+</Workspace>

@@ -1,0 +1,76 @@
+<Workspace Version="0.7.2.2114" X="-1812.3897407783" Y="138.824754873117" zoom="0.883851929302206" Description="Get Clash Id's from Clashing Groups" Category="DynaWorks15.Custom" Name="GetClashId'sByGroupName" ID="52a23734-41b3-4ebb-a742-a553c70ecb1c">
+  <Elements>
+    <Dynamo.Nodes.Symbol type="Dynamo.Nodes.Symbol" guid="48458d6a-8234-49b1-a658-19c254ce9505" nickname="Input" x="-1002.33241120459" y="22.5305948294358" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="OpenNavisFile" />
+    </Dynamo.Nodes.Symbol>
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="039a8837-afc2-4e50-9568-a50c31273837" nickname="ClashDetection.GetClashDetection" x="-828.349284582847" y="78.804498781966" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="D:\bin\AnyCPU\Release\DynaWorks15.dll" function="DynaWorks15.ClashDetection.ClashDetection.GetClashDetection@DynaWorks15.FileSettings.OpenNavisFile" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="3f657e51-f663-4021-a932-ee3f04112c33" nickname="ClashDetection.GetClashTests" x="-547.349284582847" y="73.804498781966" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="D:\bin\AnyCPU\Release\DynaWorks15.dll" function="DynaWorks15.ClashDetection.ClashDetection.GetClashTests@DynaWorks15.ClashDetection.ClashDetection" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="e40e0160-4be7-4691-9451-5504ff7791c3" nickname="ClashDetection.GetAllClashResults" x="-198.862020765283" y="-133.780555911218" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="D:\bin\AnyCPU\Release\DynaWorks15.dll" function="DynaWorks15.ClashDetection.ClashDetection.GetAllClashResults@var" />
+    <Dynamo.Nodes.Symbol type="Dynamo.Nodes.Symbol" guid="cf8c4483-34aa-4342-a604-b600c8345a1e" nickname="Input" x="923.98096377323" y="427.38522534058" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="FirstClashItem (bool)" />
+    </Dynamo.Nodes.Symbol>
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="67c4699f-710c-43a7-a32f-60eb20c88830" nickname="ClashDetection.GetClashNodes" x="1091.98312662174" y="306.27390395253" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="D:\bin\AnyCPU\Release\DynaWorks15.dll" function="DynaWorks15.ClashDetection.ClashDetection.GetClashNodes@var,bool" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="8bcdadab-c9ff-47dc-9b91-7fd12317779a" nickname="NavisNodes.NodeByClassNameList" x="1352.98312662174" y="338.27390395253" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="D:\bin\AnyCPU\Release\DynaWorks15.dll" function="DynaWorks15.Objects.NavisNodes.NodeByClassNameList@var[],string" />
+    <Dynamo.Nodes.StringInput type="Dynamo.Nodes.StringInput" guid="856c7558-2cb2-44b7-b235-73e0c51dabea" nickname="String" x="1165.98312662174" y="454.27390395253" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <System.String value="LcRevitComposite" />
+    </Dynamo.Nodes.StringInput>
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="ef008ce3-5db9-4496-b513-d77055cc5688" nickname="Flatten" x="1612.09371012026" y="339.831569958454" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="" function="Flatten@var[]..[]" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="f38db68e-2c95-4ca0-98d9-976ec1981f45" nickname="NavisAttributes.GetNavisAttributesFromNodesList" x="1785.84886129694" y="314.569504452446" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="D:\bin\AnyCPU\Release\DynaWorks15.dll" function="DynaWorks15.Objects.NavisAttributes.GetNavisAttributesFromNodesList@var" />
+    <Dynamo.Nodes.StringInput type="Dynamo.Nodes.StringInput" guid="a6ec2170-7c0a-44be-8fa6-6d74bcd7705e" nickname="String" x="2108.63389844085" y="139.09937802263" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <System.String value="Element ID" />
+    </Dynamo.Nodes.StringInput>
+    <Dynamo.Nodes.StringInput type="Dynamo.Nodes.StringInput" guid="04de1a84-3330-4e9b-be1b-6c45ae464234" nickname="String" x="2111.54313094628" y="203.361036010376" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <System.String value="Value" />
+    </Dynamo.Nodes.StringInput>
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="29b2ce47-5654-45d8-acff-694d2d26302c" nickname="NavisPropertyList.GetValuesAsStringClassUserName" x="2289.79713593241" y="60.4906656141115" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="D:\bin\AnyCPU\Release\DynaWorks15.dll" function="DynaWorks15.Objects.NavisPropertyList.GetValuesAsStringClassUserName@DynaWorks15.FileSettings.OpenNavisFile,var[],string,string" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="d76d66a3-8c8a-44f6-a7a8-6b40198a4280" nickname="Flatten" x="2700.76857172655" y="65.1174018475723" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="" function="Flatten@var[]..[]" />
+    <Dynamo.Nodes.Output type="Dynamo.Nodes.Output" guid="2f1cd07d-5866-44a3-98d3-d473b046527b" nickname="Output" x="2902.15538135162" y="69.1398166849042" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="IdList" />
+    </Dynamo.Nodes.Output>
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="2c90da5c-b7bf-4321-ac38-20968a731892" nickname="ClashDetection.GetClashGroupResults" x="-259.677144890983" y="125.354319729295" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="D:\bin\AnyCPU\Release\DynaWorks15.dll" function="DynaWorks15.ClashDetection.ClashDetection.GetClashGroupResults@var" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="da2fdcad-8e55-4057-9ca1-60ca89d0bf62" nickname="Flatten" x="402.533035667628" y="-96.6216445839639" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="" function="Flatten@var[]..[]" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="b799d029-7500-44f4-8b8e-2017ef09b8cd" nickname="GetData.GetObjectValues" x="71.9275593489858" y="178.907779876735" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="D:\bin\AnyCPU\Release\DynaWorks15.dll" function="DynaWorks15.Objects.GetData.GetObjectValues@var,string" />
+    <Dynamo.Nodes.StringInput type="Dynamo.Nodes.StringInput" guid="bcc9eec9-3d84-4b94-89f5-4481738f6916" nickname="String" x="-95.3386822579738" y="256.205058195103" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <System.String value="GroupPath" />
+    </Dynamo.Nodes.StringInput>
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="ecabed0a-2ffb-4d40-b0f5-545054df213d" nickname="Flatten" x="293.33062783574" y="176.564464951149" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="" function="Flatten@var[]..[]" />
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="29a1d366-6aec-4e0e-8d3e-a483e34ceb25" nickname="String.Contains" x="476.441013985493" y="190.052283994756" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="DSCoreNodes.dll" function="DSCore.String.Contains@string,string,bool">
+      <PortInfo index="2" default="True" />
+    </Dynamo.Nodes.DSFunction>
+    <DSCoreNodesUI.BoolSelector type="DSCoreNodesUI.BoolSelector" guid="703df265-6a21-4e69-9c08-a3c9dd634f65" nickname="Boolean" x="227.04615359826" y="384.368545745273" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <System.Boolean>True</System.Boolean>
+    </DSCoreNodesUI.BoolSelector>
+    <Dynamo.Nodes.Symbol type="Dynamo.Nodes.Symbol" guid="2ec49a70-8142-4a22-a267-5864326d629a" nickname="Input" x="263.505217880507" y="297.058681279893" isVisible="true" isUpstreamVisible="true" lacing="Disabled">
+      <Symbol value="Group Name" />
+    </Dynamo.Nodes.Symbol>
+    <Dynamo.Nodes.DSFunction type="Dynamo.Nodes.DSFunction" guid="9715209d-c94d-465c-8e0b-69f91c8ec3ce" nickname="List.FilterByBoolMask" x="780.779522376375" y="174.208620911759" isVisible="true" isUpstreamVisible="true" lacing="Shortest" assembly="DSCoreNodes.dll" function="DSCore.List.FilterByBoolMask@var[]..[],var[]..[]" />
+  </Elements>
+  <Connectors>
+    <Dynamo.Models.ConnectorModel start="48458d6a-8234-49b1-a658-19c254ce9505" start_index="0" end="039a8837-afc2-4e50-9568-a50c31273837" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="48458d6a-8234-49b1-a658-19c254ce9505" start_index="0" end="29b2ce47-5654-45d8-acff-694d2d26302c" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="039a8837-afc2-4e50-9568-a50c31273837" start_index="0" end="3f657e51-f663-4021-a932-ee3f04112c33" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="3f657e51-f663-4021-a932-ee3f04112c33" start_index="0" end="e40e0160-4be7-4691-9451-5504ff7791c3" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="3f657e51-f663-4021-a932-ee3f04112c33" start_index="0" end="2c90da5c-b7bf-4321-ac38-20968a731892" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="e40e0160-4be7-4691-9451-5504ff7791c3" start_index="0" end="da2fdcad-8e55-4057-9ca1-60ca89d0bf62" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="cf8c4483-34aa-4342-a604-b600c8345a1e" start_index="0" end="67c4699f-710c-43a7-a32f-60eb20c88830" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="67c4699f-710c-43a7-a32f-60eb20c88830" start_index="0" end="8bcdadab-c9ff-47dc-9b91-7fd12317779a" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="8bcdadab-c9ff-47dc-9b91-7fd12317779a" start_index="0" end="ef008ce3-5db9-4496-b513-d77055cc5688" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="856c7558-2cb2-44b7-b235-73e0c51dabea" start_index="0" end="8bcdadab-c9ff-47dc-9b91-7fd12317779a" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="ef008ce3-5db9-4496-b513-d77055cc5688" start_index="0" end="f38db68e-2c95-4ca0-98d9-976ec1981f45" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="f38db68e-2c95-4ca0-98d9-976ec1981f45" start_index="0" end="29b2ce47-5654-45d8-acff-694d2d26302c" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="a6ec2170-7c0a-44be-8fa6-6d74bcd7705e" start_index="0" end="29b2ce47-5654-45d8-acff-694d2d26302c" end_index="2" portType="0" />
+    <Dynamo.Models.ConnectorModel start="04de1a84-3330-4e9b-be1b-6c45ae464234" start_index="0" end="29b2ce47-5654-45d8-acff-694d2d26302c" end_index="3" portType="0" />
+    <Dynamo.Models.ConnectorModel start="29b2ce47-5654-45d8-acff-694d2d26302c" start_index="0" end="d76d66a3-8c8a-44f6-a7a8-6b40198a4280" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="d76d66a3-8c8a-44f6-a7a8-6b40198a4280" start_index="0" end="2f1cd07d-5866-44a3-98d3-d473b046527b" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="2c90da5c-b7bf-4321-ac38-20968a731892" start_index="0" end="b799d029-7500-44f4-8b8e-2017ef09b8cd" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="da2fdcad-8e55-4057-9ca1-60ca89d0bf62" start_index="0" end="9715209d-c94d-465c-8e0b-69f91c8ec3ce" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="b799d029-7500-44f4-8b8e-2017ef09b8cd" start_index="0" end="ecabed0a-2ffb-4d40-b0f5-545054df213d" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="bcc9eec9-3d84-4b94-89f5-4481738f6916" start_index="0" end="b799d029-7500-44f4-8b8e-2017ef09b8cd" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="ecabed0a-2ffb-4d40-b0f5-545054df213d" start_index="0" end="29a1d366-6aec-4e0e-8d3e-a483e34ceb25" end_index="0" portType="0" />
+    <Dynamo.Models.ConnectorModel start="29a1d366-6aec-4e0e-8d3e-a483e34ceb25" start_index="0" end="9715209d-c94d-465c-8e0b-69f91c8ec3ce" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="703df265-6a21-4e69-9c08-a3c9dd634f65" start_index="0" end="29a1d366-6aec-4e0e-8d3e-a483e34ceb25" end_index="2" portType="0" />
+    <Dynamo.Models.ConnectorModel start="2ec49a70-8142-4a22-a267-5864326d629a" start_index="0" end="29a1d366-6aec-4e0e-8d3e-a483e34ceb25" end_index="1" portType="0" />
+    <Dynamo.Models.ConnectorModel start="9715209d-c94d-465c-8e0b-69f91c8ec3ce" start_index="0" end="67c4699f-710c-43a7-a32f-60eb20c88830" end_index="0" portType="0" />
+  </Connectors>
+  <Notes />
+</Workspace>
