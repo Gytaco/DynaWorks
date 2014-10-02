@@ -24,11 +24,11 @@ Once you have this you can get packages from the package Manager or get others y
 
 As you can see there are currently 4 main parts to the Navisworks library.
 
-<b>Custom:-</b> Where I put my Custom Nodes </br>
-<b>Clash Detection:-</b> Run, get tests, get results, get clashing objects.</br>
-<b>FileSettings:-</b> Open a Navis File, append files, Save As.</br>
-<b>Objects:-</b> GetNodes, search/query objects, get properties, get values, get attributes</br>
-<b>Views:-</b> get view names, camera positions vectors and looking points.</br>
+<b>Custom:-</b> Where I put my Custom Nodes <br>
+<b>Clash Detection:-</b> Run, get tests, get results, get clashing objects.<br>
+<b>FileSettings:-</b> Open a Navis File, append files, Save As.<br>
+<b>Objects:-</b> GetNodes, search/query objects, get properties, get values, get attributes<br>
+<b>Views:-</b> get view names, camera positions vectors and looking points.<br>
 
 
 
