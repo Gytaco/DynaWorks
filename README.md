@@ -1,3 +1,5 @@
+![Image](http://archi-lab.net/wp-content/uploads/2015/08/dynaWorksLogo-01.png)
+
 DynaWorks
 ===========
 
